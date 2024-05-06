@@ -8,6 +8,7 @@ body {
     background-color: #0a0970; /* Fond bleu foncé */
 }
 form {
+    display: flex;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
