@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Role Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #role {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROLE GENERATOR</h1>
+    <p>Click the button below to generate a random role:</p>
+    <div id="role"></div>
+    <button onclick="generateRole()">Generate Role</button>
+
+    <script>
+        var roles = [
+            "Warrior",
+            "Mage",
+            "Rogue",
+            "Cleric",
+            "Archer",
+            "Paladin",
+            "Assassin",
+            "Bard",
+            "Necromancer",
+            "Druid",
+            "Monk",
+            "Sorcerer",
+            "Barbarian",
+            "Ranger",
+            "Wizard",
+            "Knight",
+            "Thief",
+            "Priest",
+            "Hunter",
+            "Shaman"
+        ];
+
+        function generateRole() {
+            var randomIndex = Math.floor(Math.random() * roles.length);
+            document.getElementById("role").innerText = roles[randomIndex];
+        }
+    </script>
+</body>
+</html>
